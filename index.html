@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fpass"].value;
+  if (x != "sss") {
+    alert("Password anda salah");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<h1>Validasi Input</h1>
+<p>Masukkan nama, password, dan alamat email anda:</p>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Nama: <input type="text" name="fname"><br>
+  Password: <input type="password" name="fpass"><br>
+  E-mail: <input type="text" name="fmail"><br>
+
+  
+  <input type="submit" value="Klik">
+</form>
+
+
+</body>
+</html>
